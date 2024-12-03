@@ -1,0 +1,26 @@
+.facts_container .infinite-scroll-component {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 20px;
+  padding-block: 2.5rem;
+}
+
+.facts_container {
+  padding: 2.5rem 4rem;
+}
+
+.facts_container>h1 {
+  margin: auto;
+  width: fit-content;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e83a4b;
+}
+
+@media (width <=426px) {
+  .facts_container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.container {
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 300px;
+  background: var(--base-red);
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  animation: visible 0.5s linear;
+  margin: auto;
+}
+
+.wrapper nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

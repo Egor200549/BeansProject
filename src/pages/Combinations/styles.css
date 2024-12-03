@@ -1,0 +1,72 @@
+.combinations_container .infinite-scroll-component {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
+  gap: 20px;
+  padding-block: 2.5rem;
+}
+
+.combinations_container {
+  padding: 2.5rem 4rem;
+}
+
+.combinations_container>h1 {
+  margin: auto;
+  width: fit-content;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e83a4b;
+}
+
+.comb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e83a4b;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 8px;
+  transition: all 0.25s;
+  gap: 10px;
+}
+
+.comb:hover {
+  box-shadow: 0 0 20px 0 rgb(171, 171, 171);
+}
+
+.comb h3 {
+  color: #e83a4b;
+  font-size: 20px;
+  font-weight: bold;
+  font-weight: 500;
+}
+
+.comb p {
+  position: relative;
+  font-size: 12px;
+  color: #e83a4b;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .combinations_container .infinite-scroll-component {
+    grid-template-columns: repeat(2, 45vw);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .combinations_container .infinite-scroll-component {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+
+  .comb {
+    padding: 30px 20px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+}
